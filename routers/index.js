@@ -7,4 +7,8 @@ module.exports=(app)=>{
   app.use("/api/tkbs", tkbRouter);
   app.use("/api/lops", lopRouter);
   app.use("/api/admins", adminRouter)
+
+  app.get("/",(req,res)=>{
+    res.render('home')
+  })
 }
