@@ -1,1 +1,54 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table id="tb1" border="1" cellspacing='0'>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Năm sinh</th>
+            <th>Giới tính</th>
+            <th>Sửa</th>
+            <th>Xóa</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+
+
+    </tbody>
+</table>
+
+<table id="tb2">
+    <tr>
+        <td>ID: </td>
+        <td><input id="newID" type="text" placeholder="IDENTITY" readonly=true></td>
+        <td>
+            <Button onclick="CreateANewStudent()">Thêm</Button>
+        </td>
+    </tr>
+    <tr>
+        <td>Họ tên: </td>
+        <td><input id="fullName" type="text" placeholder="Nhập họ tên"></td>
+        <td>
+            <Button onclick="SendUpdate()">Sửa</Button>
+        </td>
+    </tr>
+    <tr>
+        <td>Năm sinh: </td>
+        <td><input id="birthday" type="number" placeholder="Nhập năm sinh"></td>
+        <td><button onclick="Reset()">Reset</button></td>
+    </tr>
+    <tr>
+        <td>Giới tính: </td>
+        <td><input id="gender" type="text" placeholder="Nhập giới tính"></td>
+
+    </tr>
+</table>
+</body>
+</html>
